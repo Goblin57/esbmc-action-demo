@@ -1,3 +1,5 @@
+//This is a C file!
+
 #include <math.h>
 int main() {
   unsigned int N = nondet_uint();
