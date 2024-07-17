@@ -11,4 +11,4 @@ jobs:
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@dev
               with:
-                esbmc-options: --z3 --floatbv --k-induction
+                esbmc-options: --floatbv --k-induction
