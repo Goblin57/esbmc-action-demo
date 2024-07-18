@@ -9,6 +9,4 @@ jobs:
             - name: checkout
               uses: actions/checkout@v4
             - name: Run ESBMC Action
-              uses: Goblin57/esbmc-action@dev
-              with:
-                esbmc-options: --incremental-bmc
+              uses: Goblin57/esbmc-action@feature/GrantBrikiDiffAction
