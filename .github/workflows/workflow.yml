@@ -8,5 +8,10 @@ jobs:
         steps:
             - name: checkout
               uses: actions/checkout@v4
+
+            - name: Get Git Diff
+              run: echo `git diff HEAD HEAD^`
+              shell: bash
+            
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@rawDiff
