@@ -4,11 +4,11 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: macos-latest
+        runs-on: windows-latest
         steps:
             - name: checkout
               uses: actions/checkout@v4
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@dev
               with:
-                esbmc-options: --floatbv --k-induction --incremental-bmc
+                esbmc-options: --incremental-bmc
