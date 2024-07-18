@@ -5,15 +5,6 @@ on: push
 jobs:
     run-esbmc-action:
         runs-on: ubuntu-latest
-        steps:
-            - name: checkout
-              uses: actions/checkout@v4
-              with:
-                fetch-depth: 2
-
-            - name: Get Git Diff
-              run: echo `git diff HEAD HEAD^`
-              shell: bash
-            
+        steps:            
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@rawDiff
