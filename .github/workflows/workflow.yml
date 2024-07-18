@@ -8,6 +8,8 @@ jobs:
         steps:
             - name: checkout
               uses: actions/checkout@v4
+              with:
+                fetch-depth: 2
 
             - name: Get Git Diff
               run: echo `git diff HEAD HEAD^`
