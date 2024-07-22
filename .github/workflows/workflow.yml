@@ -7,4 +7,6 @@ jobs:
         runs-on: macos-latest
         steps:            
             - name: Run ESBMC Action
-              uses: Goblin57/esbmc-action@rawDiff
+              uses: Goblin57/esbmc-action@dev
+              with:
+                esbmc-options: --incremental-bmc --memory-leak-check
