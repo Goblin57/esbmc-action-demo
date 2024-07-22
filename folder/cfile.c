@@ -1,6 +1,8 @@
 //This is a C file!
 
 #include <math.h>
+#include <assert.h>
+
 int main() {
   unsigned int N = nondet_uint();
   double x = nondet_double();
