@@ -9,4 +9,4 @@ jobs:
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@dev
               with:
-                esbmc-options: --incremental-bmc --memory-leak-check
+                esbmc-options: --incremental-bmc --memory-leak-check --quiet
