@@ -5,8 +5,6 @@ on: push
 jobs:
     run-esbmc-action:
         runs-on: windows-latest
-        steps:            
+        steps:
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@dev
-              with:
-                esbmc-options: --incremental-bmc --memory-leak-check --quiet
