@@ -8,3 +8,5 @@ jobs:
         steps:
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@dev
+              with:
+                esbmc-options: --incremental-bmc
