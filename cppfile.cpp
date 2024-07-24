@@ -1,4 +1,4 @@
-// Added !
+// Added
 
 int main() {
     int x = 2;
