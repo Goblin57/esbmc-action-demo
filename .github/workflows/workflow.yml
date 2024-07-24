@@ -4,10 +4,10 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: ubuntu-latest
+        runs-on: macos-latest
         steps:
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@dev
               with:
                 esbmc-options: "--incremental-bmc --quiet --color --verbosity 4 --file-output output.txt"
-                create-artifact: n
+                create-artifact: y
