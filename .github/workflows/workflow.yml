@@ -12,4 +12,4 @@ jobs:
                 esbmc-options: "--incremental-bmc --quiet --color --verbosity 4 --witness-output '  output  .txt'"
                 create-artifact: y
                 artifact-retention-days: 1
-                artifact-compression-level: 7
+                artifact-compression-level: 15
