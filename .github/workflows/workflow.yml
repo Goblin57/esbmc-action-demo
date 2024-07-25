@@ -9,5 +9,5 @@ jobs:
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@dev
               with:
-                esbmc-options: --incremental-bmc --quiet --color --verbosity 4 --file-output "   over     here  .txt"
+                esbmc-options: --incremental-bmc --quiet --color --verbosity 4 --file-output ""   over     here  .txt""
                 create-artifact: y
