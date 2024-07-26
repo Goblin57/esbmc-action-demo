@@ -12,6 +12,9 @@ jobs:
               with:
                 esbmc-options: "--incremental-bmc --quiet --color --witness-output output.txt --verbosity 4"
                 create-artifact: y
+                files: |
+                  cppfile.c
+                  space file.c
             
             - name: Test outputs
               run: |
