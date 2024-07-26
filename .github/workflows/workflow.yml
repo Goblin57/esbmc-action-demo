@@ -4,10 +4,16 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: windows-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Run ESBMC Action
+              id: esbmc-action
               uses: Goblin57/esbmc-action@dev
               with:
-                esbmc-options: "--incremental-bmc --smtlib --quiet --color"
+                esbmc-options: "--incremental-bmc --quiet --color --verbosity 4"
                 create-artifact: n
+            
+            - name: Test outputs
+              run: |
+                echo "${{ steps.esbmc-action.outputs.artifact-id }}"
+                echo "${{ steps.esbmc-action.outputs.artifact-url }}"
