@@ -9,5 +9,5 @@ jobs:
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@dev
               with:
-                esbmc-options: "--incremental-bmc --bitwuzla --quiet --color"
+                esbmc-options: "--incremental-bmc --mathsat --quiet --color"
                 create-artifact: n
