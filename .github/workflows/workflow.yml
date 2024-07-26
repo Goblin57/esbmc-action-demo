@@ -10,7 +10,7 @@ jobs:
               id: esbmc-action
               uses: Goblin57/esbmc-action@dev
               with:
-                esbmc-options: "--incremental-bmc --quiet --color --witness-output out.txt --verbosity 4"
+                esbmc-options: "--incremental-bmc --quiet --color --file-output out.txt --verbosity 4"
                 create-artifact: y
             
             - name: Test outputs
