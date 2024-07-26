@@ -10,7 +10,7 @@ jobs:
               id: esbmc-action
               uses: Goblin57/esbmc-action@feature/manFiles
               with:
-                esbmc-options: "--incremental-bmc --quiet --color --witness-output output.txt --verbosity 4"
+                esbmc-options: "--incremental-bmc --quiet --color --file-output output.txt --verbosity 4"
                 create-artifact: y
                 files: |
                   cppfile.cpp
