@@ -4,7 +4,7 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: windows-latest
+        runs-on: macos-latest
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
