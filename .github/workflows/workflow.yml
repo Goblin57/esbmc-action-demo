@@ -9,5 +9,5 @@ jobs:
             - name: Run ESBMC Action
               uses: Goblin57/esbmc-action@dev
               with:
-                esbmc-options: "--incremental-bmc --z3 --quiet --color --verbosity 4"
+                esbmc-options: "--incremental-bmc --boolector --quiet --color --verbosity 4"
                 create-artifact: y
