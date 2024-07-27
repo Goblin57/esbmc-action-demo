@@ -4,7 +4,7 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: macos-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
@@ -14,6 +14,7 @@ jobs:
                 create-artifact: y
                 files: |
                   cppfile.cpp
+                  abc.c
                   space file.c
             
             - name: Test outputs
