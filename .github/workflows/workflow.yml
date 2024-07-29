@@ -8,10 +8,13 @@ jobs:
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
-              uses: Goblin57/esbmc-action@feature/manFiles
+              uses: Goblin57/esbmc-action@v1
               with:
                 esbmc-options: "--incremental-bmc --quiet --color --verbosity 4"
-                create-artifact: n
+                create-artifact: y
+                files: |
+                  cppfile.cpp
+                  space file.c
             
             - name: Test outputs
               run: |
