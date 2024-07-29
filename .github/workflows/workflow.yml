@@ -14,7 +14,7 @@ jobs:
                 create-artifact: y
                 files: |
                   cppfile.cpp
-                  space file.c
+                  folderspace file.c
             
             - name: Test outputs
               run: |
