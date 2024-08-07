@@ -8,7 +8,7 @@ jobs:
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
-              uses: Goblin57/esbmc-action@v1
+              uses: esbmc/esbmc-action@v1
               with:
                 esbmc-options: "--incremental-bmc --quiet --color --verbosity 4"
                 create-artifact: n
