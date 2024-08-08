@@ -10,11 +10,8 @@ jobs:
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
               with:
-                esbmc-options: "--incremental-bmc --quiet --color --verbosity 4"
-                create-artifact: n
-                files: |
-                  cppfile.cpp
-                  folder/space file.c
+                checkout: n
+                
             
             - name: Test outputs
               run: |
