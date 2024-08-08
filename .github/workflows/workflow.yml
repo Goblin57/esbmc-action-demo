@@ -6,6 +6,11 @@ jobs:
     run-esbmc-action:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout
+              uses: actions/checkout@v4
+              with:
+                fetch-depth: 2
+            
             - name: Run ESBMC Action
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
