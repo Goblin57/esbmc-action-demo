@@ -9,7 +9,7 @@ jobs:
             - name: checkout
               uses: actions/checkout@v4
               with:
-                fetch-depth: 2
+                fetch-depth: 1
             
             - name: Run ESBMC Action
               id: esbmc-action
