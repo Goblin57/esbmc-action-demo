@@ -10,7 +10,7 @@ jobs:
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
               with:
-                checkout: y
+                checkout: n
                 
             
             - name: Test outputs
