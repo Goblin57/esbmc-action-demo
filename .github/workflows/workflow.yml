@@ -8,7 +8,7 @@ jobs:
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
-              uses: esbmc/esbmc-action@feature/time
+              uses: esbmc/esbmc-action@dev
               with:
                 esbmc-options: "--incremental-bmc --quiet --color --verbosity 4"
                 create-artifact: n
