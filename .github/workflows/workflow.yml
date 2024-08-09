@@ -4,13 +4,8 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: windows-latest
+        runs-on: ubuntu-latest
         steps:
-#            - name: checkout
-#              uses: actions/checkout@v4
-#              with:
-#                fetch-depth: 1
-            
             - name: Run ESBMC Action
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
