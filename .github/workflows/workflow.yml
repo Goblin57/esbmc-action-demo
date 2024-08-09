@@ -8,7 +8,7 @@ jobs:
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
-              uses: esbmc/esbmc-action@v1
+              uses: esbmc/esbmc-action@dev
               with:
                 files: |
                   folder/space file.c
