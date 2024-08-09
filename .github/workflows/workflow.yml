@@ -16,7 +16,7 @@ jobs:
               uses: esbmc/esbmc-action@dev
               with:
                 files: |
-                  cfile.c
+                  folder/cfile.c
                   cppfile.cpp
                 
             
