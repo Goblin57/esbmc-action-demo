@@ -4,18 +4,20 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: ubuntu-latest
+        runs-on: windows-latest
         steps:
-            - name: checkout
-              uses: actions/checkout@v4
-              with:
-                fetch-depth: 1
+#            - name: checkout
+#              uses: actions/checkout@v4
+#              with:
+#                fetch-depth: 1
             
             - name: Run ESBMC Action
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
               with:
-                checkout: n
+                files: |
+                  cfile.c
+                  cppfile.cpp
                 
             
             - name: Test outputs
