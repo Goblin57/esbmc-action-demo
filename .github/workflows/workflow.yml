@@ -8,7 +8,7 @@ jobs:
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
-              uses: esbmc/esbmc-action@v2
+              uses: esbmc/esbmc-action@main
               with:
                 esbmc-options: --incremental-bmc --file-output out.txt
                 create-artifact: y
