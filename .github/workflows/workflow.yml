@@ -4,14 +4,14 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: windows-latest
+        runs-on: macos-latest
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
               with:
                 esbmc-options: --incremental-bmc
-                fail-fast: n
+                fail-fast: y
                 files: |
                   cppfile.cpp
                   folder/space file.c
