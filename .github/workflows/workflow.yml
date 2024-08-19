@@ -4,15 +4,17 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: windows-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
-              uses: esbmc/esbmc-action@main
+              uses: esbmc/esbmc-action@dev
               with:
-                esbmc-options: --incremental-bmc --file-output out.txt
-                create-artifact: y
-                
+                esbmc-options: --incremental-bmc
+                fail-fast: y
+                files: |
+                  cppfile.cpp
+                  space file.c
             
             - name: Test outputs
               run: |
