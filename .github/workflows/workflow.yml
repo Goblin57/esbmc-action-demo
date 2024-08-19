@@ -11,7 +11,7 @@ jobs:
               uses: esbmc/esbmc-action@dev
               with:
                 esbmc-options: --incremental-bmc
-                fail-fast: y
+                fail-fast: n
                 files: |
                   cppfile.cpp
                   folder/space file.c
