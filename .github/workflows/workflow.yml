@@ -4,14 +4,14 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: windows-latest
+        runs-on: macos-latest
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
               with:
-                fail-fast: y
-                display-overhead: y
+                fail-fast: n
+                display-overhead: n
                 files: |
                   cppfile.cpp
                   folder/space file.c
