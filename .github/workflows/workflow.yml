@@ -4,13 +4,13 @@ on: push
 
 jobs:
     run-esbmc-action:
-        runs-on: macos-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Run ESBMC Action
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
               with:
-                fail-fast: y
+                fail-fast: n
                 display-overhead: n
                 files: |
                   cppfile.cpp
