@@ -11,7 +11,7 @@ jobs:
               uses: esbmc/esbmc-action@dev
               with:
                 esbmc-options: --incremental-bmc --witness-output out.txt
-                fail-fast: y
+                fail-fast: n
                 display-overhead: y
                 create-artifact: y
                 files: |
