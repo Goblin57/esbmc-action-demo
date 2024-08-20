@@ -10,8 +10,8 @@ jobs:
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
               with:
-                fail-fast: y
-                display-overhead: n
+                fail-fast: n
+                display-overhead: y
                 files: |
                   cppfile.cpp
                   folder/space file.c
