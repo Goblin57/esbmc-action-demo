@@ -10,7 +10,6 @@ jobs:
               id: esbmc-action
               uses: esbmc/esbmc-action@dev
               with:
-                esbmc-options: --incremental-bmc
                 fail-fast: y
                 files: |
                   cppfile.cpp
