@@ -11,6 +11,7 @@ jobs:
               uses: esbmc/esbmc-action@dev
               with:
                 fail-fast: y
+                display-overhead: y
                 files: |
                   cppfile.cpp
                   folder/space file.c
