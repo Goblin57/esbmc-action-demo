@@ -1,5 +1,3 @@
-//This is a C file
-
 #include <math.h>
 #include <assert.h>
 

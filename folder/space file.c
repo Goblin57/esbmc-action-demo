@@ -1,5 +1,3 @@
-// Comment
-
 #include <stdlib.h>
 int *a, *b;
 int n;
