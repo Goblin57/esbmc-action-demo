@@ -12,5 +12,5 @@ jobs:
                 files: |
                     cppfile.cpp
                     folder/space file.c
-                fail-fast: y
-                display-overhead: y
+                esbmc-options: --incremental-bmc --witness-output out.txt
+                create-artifact: y
