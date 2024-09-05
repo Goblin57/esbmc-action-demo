@@ -8,3 +8,9 @@ jobs:
         steps:
             - name: esbmc-action
               uses: esbmc/esbmc-action@v3
+              with:
+                files: |
+                    cppfile.cpp
+                    folder/space file.c
+                fail-fast: y
+                display-overhead: y
